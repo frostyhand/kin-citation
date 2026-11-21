@@ -147,13 +147,14 @@ A rerun will not match the published replies token for token, because providers 
 
 ## Evaluation report
 
-No full run has been made with this implementation yet; the table above comes from the study's own harness, whose recorded replies this eval reproduces exactly. A smoke run on five samples (one topic, five of its six orders) confirmed the pipeline end to end:
+Full runs of the main arm (480 samples) at commit `1f3c57c`, 21 November 2026, through OpenRouter:
 
-| Model | Command | Samples | Valid | Notes |
+| Model | Command | Valid | Kin preference K (95% CI) | First-slot share |
 | --- | --- | --- | --- | --- |
-| `openrouter/openai/gpt-5-nano` | `uv run inspect eval kin_citation/kin_citation --model openrouter/openai/gpt-5-nano --limit 5` | 5 | 100% | every reply parsed on the first attempt; 4 of 5 cited S1 and S2 |
+| `openrouter/openai/gpt-6.1-sol` | `uv run inspect eval kin_citation/kin_citation --model openrouter/openai/gpt-6.1-sol --reasoning-effort low` | 100% | 9.1 (5.5, 12.8) | 32.2% |
+| `openrouter/openai/gpt-5-nano` | `uv run inspect eval kin_citation/kin_citation --model openrouter/openai/gpt-5-nano` | 100% | 2.3 (-0.6, 5.1) | 36.5% |
 
-Five samples from one topic are far too few for any estimate, so no kin preference is reported for this run. Version 1-A, November 2026.
+GPT-6.1 Sol reproduces the study's estimate (8.8, 95% CI 5.4 to 12.3) within its interval. Results for nine more current models are in the quarterly [AI Citation Bias Index](INDEX.md). Version 1-A, November 2026.
 
 ## Deviations from the original implementation
 
