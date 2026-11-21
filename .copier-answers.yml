@@ -1,0 +1,16 @@
+# This file is auto-generated and updated by Copier; do not edit by hand.
+# Run `copier update` to pull in template changes.
+_commit: v2.0.0
+_src_path: upstream/inspect-evals-template
+author_email: tejaswi.s@ieseg.fr
+author_name: Tejaswi Suresh
+eval_description: 'Kin preference in answer engines: does a model cite pages written
+    by its own model family more often than other engines cite those same pages?'
+eval_name: kin-citation
+github_owner: frostyhand
+github_username: frostyhand
+include_examples: false
+layout: single-eval
+license: MIT
+python_version: '3.12'
+use_template_update: false

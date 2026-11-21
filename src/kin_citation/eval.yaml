@@ -1,0 +1,10 @@
+title: "Kin Citation: Kin Preference in Generative Answer Engines"
+description: |
+  Measures whether an answer engine cites web pages written by its own model family more often than other engines cite those same pages, using pages that carry identical facts and were written without seeing the question, in fully counterbalanced orders.
+group: Bias
+contributors:
+  - frostyhand
+version: "1-A"
+tasks:
+  - name: kin_citation
+    dataset_samples: 480
